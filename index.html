@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Balona Patlatma Oyunu</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Ana Menü -->
+  <div id="home-screen" class="screen active">
+    <h1 class="game-title">🎈 Balona Patlatma Oyunu 🎯</h1>
+    <p class="subtitle">Refleksini test et! Hazırsan başla!</p>
+    <button id="start-menu-button" class="btn primary">Oyuna Başla</button>
+  </div>
+
+  <!-- Oyun Ekranı -->
+  <div id="game-screen" class="screen">
+    <div class="top-bar">
+      <div class="score-box">
+        Puan: <span id="score">0</span><br/>
+        🏆 En Yüksek: <span id="high-score">0</span>
+      </div>
+      <div class="timer-box">Süre: <span id="time">30</span> sn</div>
+    </div>
+    <div id="balloon-area"></div>
+    <div class="control-buttons">
+      <button id="stop-button" class="btn danger">⏸ Durdur</button>
+      <button id="resume-button" class="btn success">▶ Devam Et</button>
+    </div>
+  </div>
+
+  <!-- Oyun Bitti Ekranı -->
+  <div id="game-over-screen" class="screen">
+    <h2>⏱ Süre Doldu!</h2>
+    <p>Toplam Puanın: <span id="final-score">0</span></p>
+    <p>🏆 En Yüksek Skor: <span id="final-high-score">0</span></p>
+    <button id="retry-button" class="btn primary">🔁 Yeniden Dene</button>
+    <button id="back-home-button" class="btn secondary">🏠 Ana Menü</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
